@@ -1,0 +1,30 @@
+[[{
+    "ProjectName": "Cricket Stadium Construction",
+    "Date": "12/08/2021", 
+    "Po": "14", 
+    "PurchageAddress": ["Centurion", "2008", "N.", "Goldenrod", "Rd", "Orlando,", "Florida,", "32807", "(855)", "768-8587", "krunal@ridarotech.com"],
+    "Vendor": "26376.vendor@landt.com.(908) 779-8984   ",
+    "ShipTo": "Airport Wing.Surat.Gujarat.India - 394601."}
+    ],
+    [
+        {"QUOTE NUMBER": "8"},
+        {"VALID UNTIL": "12/08/2021"},
+        {"CREATED BY": "Krunal T Tailor"}, 
+        {"SHIPPING METHOD": "Car"}, 
+        {"TERMS": "No termsw"}
+    ], 
+    [
+        {"ITEM #": "3"},
+        {"ITEM NAME": "Door wood material"}, 
+        {"PACKAGING": "Boxes"},
+        {"PRICE": "$150.00"},
+        {"ORD QTY": "5"}, 
+        {"TOTAL": "$750.00"}
+    ],  
+    [
+    {"Tax": "$10.00",
+    "Shipping": "$100.00", 
+    "Other": "NaN", 
+    "Total": "$860.00"
+    }
+]]
