@@ -1,6 +1,12 @@
 import glob,json
 import pprint
-import PyPDF2
+import PyPDF2,os
+
+filePath = os.getcwd()
+newpath = filePath +"/"+"Json File"
+os.makedirs(newpath)
+if not os.path.exists(filePath):
+    os.makedirs(newpath)
 mylist = [file for file in glob.glob("StoreFile/*.pdf")]
 data = [PyPDF2.PdfFileReader(getListOfFile) for getListOfFile in mylist]
 matchWord = ["Packing Slip","INVOICE","PUBLIC TELEPHONE COMPANY","Purchase Order","Receipt","invoice number"]
@@ -13,7 +19,7 @@ def FileNames():
 iterData = iter(FileNames())
 def readData():
     AlljsonHere = list()
-    for reader in data:
+    for reader in data: 
         page = reader.pages
         for pages in page:
             text = pages.extract_text().lower()
@@ -29,7 +35,7 @@ for i in datas:
     GetFileName = i.get("FileName").lower()
     convertFileType = GetFileName.replace("pdf","json")
     ConvertIntoString = json.dumps(i)
-    with open(convertFileType,"w") as file:
+    with open(f"Json File/ {convertFileType}","w+") as file:
         store = file.write(ConvertIntoString)
 
 
